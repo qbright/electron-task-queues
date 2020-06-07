@@ -1,0 +1,33 @@
+{
+  "name": "electron-task-queues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env SERVER_NODE_ENV=development nodemon",
+    "build": "tsc -p tsconfig.build.json",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 &&  git commit -a -m \"docs: change log\"",
+    "major": "npm version major -m \"Upgrade to %s\"",
+    "minor": "npm version minor -m \"Upgrade to %s\"",
+    "patch": "npm version patch -m \"Upgrade to %s\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qbright/electron-task-queues.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qbright/electron-task-queues/issues"
+  },
+  "homepage": "https://github.com/qbright/electron-task-queues#readme",
+  "dependencies": {
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  }
+}
